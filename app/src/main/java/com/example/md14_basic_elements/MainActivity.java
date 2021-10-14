@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity{
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
             Log.d("omg android", position + ": " + mNameList.get(position));
-            String value = mNameList.get(position).toString()
-                    + " is learning Android development!";
+            String value = "Значение: " + mNameList.get(position).toString()
+                    + " удалено из списка";
             mainTV.setText(value);
             // Удаление выделенных элементов списка
             mNameList.remove(position);
